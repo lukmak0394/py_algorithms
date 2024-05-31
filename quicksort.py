@@ -3,7 +3,7 @@ def quicksort(arr):
     if len(arr) <= 1:
         return arr
     else:
-        # define pivot element
+        # define pivot element (first element in the array is for worst case scenario O(n^2)))
         pivot = arr[0]
         # define elements less than pivot and elements greater than pivot
         less = [i for i in arr[1:] if i <= pivot]
